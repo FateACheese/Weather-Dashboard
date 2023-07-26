@@ -10,3 +10,52 @@ var currentDate = now.format("dddd MMM. D, YYYY");
 var baseURL = "https://api.openweathermap.org/data/2.5/";
 var APIKey = "f4d6848eb3a488816cecbd2392d8a108";
 var units = "imperial";
+
+// Replacemenet icon array
+var icons = [
+  {
+    code: "01",
+    day: "fas fa-sun",
+    night: "fas fa-moon",
+  },
+  {
+    code: "02",
+    day: "fas fa-cloud-sun",
+    night: "fas fa-cloud-moon",
+  },
+  {
+    code: "03",
+    day: "fas fa-cloud",
+    night: "fas fa-cloud",
+  },
+  {
+    code: "04",
+    day: "fas fa-cloud-sun",
+    night: "fas fa-cloud-moon",
+  },
+  {
+    code: "09",
+    day: "fas fa-cloud-rain",
+    night: "fas fa-cloud-rain",
+  },
+  {
+    code: "10",
+    day: "fas fa-cloud-showers-heavy",
+    night: "fas fa-cloud-showers-heavy",
+  },
+  {
+    code: "11",
+    day: "fas fa-bolt",
+    night: "fas fa-bolt",
+  },
+  {
+    code: "13",
+    day: "fas fa-snowflake",
+    night: "fas fa-snowflake",
+  },
+  {
+    code: "50",
+    day: "fas fa-smog",
+    night: "fas fa-smog",
+  },
+];
