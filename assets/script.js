@@ -59,3 +59,20 @@ var icons = [
     night: "fas fa-smog",
   },
 ];
+
+// Initialize application
+init();
+
+function init() {
+  // Set current date in page header
+  $("#today").text(currentDate);
+
+  // Set initial search history visibility conditions
+  if (window.innerWidth >= 578) {
+    $("#search-history").addClass("show");
+    $("#collapse-search-history").hide();
+  }
+
+  // Load cities in local storage back into application
+  getSearchHistory();
+}
